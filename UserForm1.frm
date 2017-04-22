@@ -13,3 +13,10 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Public doNothingHere As String
+
+Public Sub DoSomethingCool()
+
+    'Here I am... do something cool
+    
+End Sub
