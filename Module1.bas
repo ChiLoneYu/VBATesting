@@ -9,5 +9,8 @@ Public Sub DoSomething()
     MsgBox "I'm doing something here: " & Test
     
     MsgBox "Oh look... please look here!"
+    
+    Dim doNothing As String
+    
 
 End Sub
