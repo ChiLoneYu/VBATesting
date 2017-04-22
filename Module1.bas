@@ -7,5 +7,7 @@ Public Sub DoSomething()
     Test = "Lah Lah Lah"
     
     MsgBox "I'm doing something here: " & Test
+    
+    MsgBox "Oh look... please look here!"
 
 End Sub
