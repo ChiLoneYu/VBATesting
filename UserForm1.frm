@@ -18,5 +18,7 @@ Public doNothingHere As String
 Public Sub DoSomethingCool()
 
     'Here I am... do something cool
+	'Adding this so I can REEEALY do something cool
+	MsgBox "You are the best... keep it up!!"
     
 End Sub
