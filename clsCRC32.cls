@@ -71,3 +71,4 @@ Dim Temp1 As Long
     CRCTable(I) = CRC
   Next I
 End Sub
+

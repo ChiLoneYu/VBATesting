@@ -16,6 +16,4 @@ Attribute VB_Exposed = False
 Private Sub CommandButton1_Click()
  MsgBox "This is a test"
  'Blah Blah
- MsgBox "Modified this separately"
- 
 End Sub
