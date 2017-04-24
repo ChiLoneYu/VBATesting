@@ -1,0 +1,25 @@
+Type=OleDll
+Reference=*\G{000204EF-0000-0000-C000-000000000046}#4.2#0#C:\PROGRA~1\COMMON~1\MICROS~1\VBA\VBA7.1\VBE7.DLL#VBA
+Reference=*\G{D5C3CB6F-AA0A-4D45-B02D-CF2974EFD4BE}#1.0#0#C:\Program Files\Common Files\Autodesk Shared\acax19enu.tlb#AutoCAD
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\Windows\System32\stdole2.tlb#stdole
+Reference=*\G{0D452EE1-E08F-101A-852E-02608C4D0BB4}#2.0#0#C:\Windows\system32\FM20.DLL#MSForms
+Class=ThisDrawing; ThisDrawing.cls
+Module=BootStrapLoader; BootStrapLoader.bas
+Module=CodeUtils; CodeUtils.bas
+Module=DocPropIO; DocPropIO.bas
+Module=FileUtils; FileUtils.bas
+Module=GitCommands; GitCommands.bas
+Module=GitIO; GitIO.bas
+Module=GitParser; GitParser.bas
+Module=GitProject; GitProject.bas
+Module=ShellRedirect; ShellRedirect.bas
+Module=ShibbySettings; ShibbySettings.bas
+Module=UI; UI.bas
+Form=GitCommitMessageForm.frm
+Form=GitConsoleForm.frm
+Form=GitRemoteForm.frm
+Form=GitSettingsForm.frm
+Form=NonModalMsgBoxForm.frm
+Class=GitBranch; GitBranch.cls
+Class=GitRemote; GitRemote.cls
+
