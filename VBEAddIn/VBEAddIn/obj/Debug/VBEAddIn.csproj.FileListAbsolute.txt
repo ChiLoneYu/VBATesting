@@ -1,0 +1,12 @@
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\VBEAddIn.dll
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\VBEAddIn.pdb
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.csprojResolveAssemblyReference.cache
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.dll
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.pdb
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.csproj.ResolveComReference.cache
+C:\Users\acunningham\Source\Repos\VBATesting\VBEAddIn\VBEAddIn\bin\Debug\VBEAddIn.dll
+C:\Users\acunningham\Source\Repos\VBATesting\VBEAddIn\VBEAddIn\bin\Debug\VBEAddIn.pdb
+C:\Users\acunningham\Source\Repos\VBATesting\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.csprojResolveAssemblyReference.cache
+C:\Users\acunningham\Source\Repos\VBATesting\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.csproj.ResolveComReference.cache
+C:\Users\acunningham\Source\Repos\VBATesting\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.dll
+C:\Users\acunningham\Source\Repos\VBATesting\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.pdb
