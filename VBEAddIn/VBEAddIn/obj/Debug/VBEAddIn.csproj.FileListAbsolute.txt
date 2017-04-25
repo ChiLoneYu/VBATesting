@@ -1,0 +1,6 @@
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\VBEAddIn.dll
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\VBEAddIn.pdb
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.csprojResolveAssemblyReference.cache
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.dll
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.pdb
+c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.csproj.ResolveComReference.cache
