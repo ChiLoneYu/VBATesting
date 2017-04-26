@@ -1,0 +1,17 @@
+Type=OleDll
+Reference=*\G{000204EF-0000-0000-C000-000000000046}#4.2#0#C:\PROGRA~1\COMMON~1\MICROS~1\VBA\VBA7.1\VBE7.DLL#VBA
+Reference=*\G{D5C3CB6F-AA0A-4D45-B02D-CF2974EFD4BE}#1.0#0#C:\Program Files\Common Files\Autodesk Shared\acax19enu.tlb#AutoCAD
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\Windows\System32\stdole2.tlb#stdole
+Reference=*\G{0002E157-0000-0000-C000-000000000046}#5.3#0#C:\Program Files (x86)\Common Files\Microsoft Shared\VBA\VBA6\VBE6EXT.OLB#VBIDE
+Reference=*\G{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}#2.8#0#C:\Program Files (x86)\Microsoft Office\Root\VFS\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\MSO.DLL#Office
+Reference=*\G{420B2830-E718-11CF-893D-00A0C9054228}#1.0#0#C:\Windows\System32\scrrun.dll#Scripting
+Reference=*\G{0D452EE1-E08F-101A-852E-02608C4D0BB4}#2.0#0#C:\Windows\system32\FM20.DLL#MSForms
+Reference=*\G{8B217740-717D-11CE-AB5B-D41203C10000}#1.0#0#c:\Windows\SysWow64\tlbinf32.dll#TLI
+Reference=*\G{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}#1.0#0#C:\Windows\SysWOW64\shell32.dll#Shell32
+Class=ThisDrawing; ThisDrawing.cls
+Module=modDevTools; modDevTools.bas
+Class=clsCRC32; clsCRC32.cls
+Form=frmVfcMain.frmcmp
+Module=modVfcMain; modVfcMain.bas
+Module=modFileFunctions; modFileFunctions.bas
+
