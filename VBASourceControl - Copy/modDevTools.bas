@@ -86,7 +86,7 @@ Public Sub ExportSourceFiles(destPath As String)
                 If Hex$(CRC32.CalcCRC32(ignorePath & ignoreFile.Name)) <> Hex$(CRC32.CalcCRC32(destPath & ignoreFile.Name)) Then
                     ignoreFile.Copy destPath & ignoreFile.Name, True
                     
-                    'Also copy the matching FRM and FRX files if copying a form comparison file
+                    'Also copy the matching FRM and FRX files if a form comparison file is found with a non-matching CRC32
                     If GetFileExtension(ignoreFile.Name, True) = "FRMCMP" Then
                         copyFRX = True
                         
@@ -94,12 +94,10 @@ Public Sub ExportSourceFiles(destPath As String)
 
                 End If
                 
-                
             Else
                 'Copy from ignore to root since file doesn't exist
                 ignoreFile.Copy destPath, True
                 
-            
                 'Also copy the match FRX file if copying a form
                 If GetFileExtension(ignoreFile.Name, True) = "FRMCMP" Then
                 
@@ -128,6 +126,9 @@ Public Sub ExportSourceFiles(destPath As String)
         
     Next
     
+    If frmVfcMain.cbDeleteIgnoreFiles Then
+        fileSystemHandler.DeleteFile destPath & "ignore\*"
+    End If
    
 End Sub
 

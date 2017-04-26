@@ -105,7 +105,7 @@ Private Sub UserForm_Activate()
   listIndex = 1
   For intIndex = 1 To objProjs.Count
     Set objProj = objProjs(intIndex)
-    If (objProj.Name <> "ExportToVB6") Then 'do not list the exporter macro
+    If (objProj.fileName <> objProjs.VBE.ActiveVBProject.fileName) Then  'do not list the exporter macro
         lstVBProjects.AddItem CStr(intIndex)
         lstVBProjects.List(listIndex - 1, 1) = objProj.Name
         lstVBProjects.List(listIndex - 1, 2) = objProj.fileName

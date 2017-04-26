@@ -52,7 +52,7 @@ Begin VB.Form frmVfcMain
       Height          =   375
       Left            =   3480
       TabIndex        =   2
-      Top             =   3720
+      Top             =   4080
       Width           =   960
    End
    Begin VB.Frame fraOptions
@@ -66,7 +66,7 @@ Begin VB.Form frmVfcMain
          Italic          =   0  'False
          Strikethrough   =   0  'False
       EndProperty
-      Height          =   1800
+      Height          =   2160
       Left            =   120
       TabIndex        =   3
       Top             =   1800
@@ -112,7 +112,7 @@ Begin VB.Form frmVfcMain
          Height          =   720
          Left            =   150
          TabIndex        =   2
-         Top             =   960
+         Top             =   1320
          Width           =   4800
          Begin VB.TextBox txtGitRepoPath
             Alignment       =   1  'Right Jusify
@@ -133,6 +133,24 @@ Begin VB.Form frmVfcMain
             Width           =   960
          End
       End
+      Begin VB.CheckBox cbDeleteIgnoreFiles
+         Caption         =   "Delete files in /ignore/ after processing"
+         BeginProperty Font
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0  'False
+            Italic          =   0  'False
+            Strikethrough   =   0  'False
+         EndProperty
+         Height          =   300
+         Left            =   150
+         TabIndex        =   3
+         Top             =   960
+         Value           =   1  'Checked
+         Width           =   4830
+      End
    End
    Begin VB.CommandButton cmdConvert
       Caption         =   "Export Project for Source Control"
@@ -140,7 +158,7 @@ Begin VB.Form frmVfcMain
       Height          =   375
       Left            =   600
       TabIndex        =   4
-      Top             =   3720
+      Top             =   4080
       Width           =   2760
    End
 End
@@ -240,7 +258,7 @@ Private Sub UserForm_Activate()
   listIndex = 1
   For intIndex = 1 To objProjs.Count
     Set objProj = objProjs(intIndex)
-    If (objProj.Name <> "ExportToVB6") Then 'do not list the exporter macro
+    If (objProj.fileName <> objProjs.VBE.ActiveVBProject.fileName) Then  'do not list the exporter macro
         lstVBProjects.AddItem CStr(intIndex)
         lstVBProjects.List(listIndex - 1, 1) = objProj.Name
         lstVBProjects.List(listIndex - 1, 2) = objProj.fileName
