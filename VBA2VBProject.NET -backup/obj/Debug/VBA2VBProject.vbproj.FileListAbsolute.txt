@@ -1,0 +1,5 @@
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Debug\Interop.AutoCAD.dll
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Debug\Interop.Scripting.dll
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Debug\Interop.Shell32.dll
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Debug\Interop.TLI.dll
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Debug\VBA2VBProject.vbproj.ResolveComReference.cache
