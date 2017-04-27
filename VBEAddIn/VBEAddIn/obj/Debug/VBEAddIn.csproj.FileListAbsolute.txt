@@ -4,3 +4,9 @@ c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug
 c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.dll
 c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.pdb
 c:\users\aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\obj\Debug\VBEAddIn.csproj.ResolveComReference.cache
+C:\Users\Aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\AcCoreMgd.dll
+C:\Users\Aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\AcDbMgd.dll
+C:\Users\Aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\AcMgd.dll
+C:\Users\Aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\AdWindows.dll
+C:\Users\Aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\AcTcMgd.dll
+C:\Users\Aaron\documents\visual studio 2017\Projects\VBEAddIn\VBEAddIn\bin\Debug\AcCui.dll

@@ -1,7 +1,10 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Basic Express 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBA2VBProject", "VBA2VBProject.vbproj", "{EE77DC70-6A45-451E-B61E-E69B5736DCCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VBA2VBProject.Converted", "..\VBA2VBProject.NET.ConvertedToC#\VBA2VBProject.Converted.csproj", "{AC354887-37C7-4988-A1B1-4C2F4D8BFF12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +16,10 @@ Global
 		{EE77DC70-6A45-451E-B61E-E69B5736DCCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE77DC70-6A45-451E-B61E-E69B5736DCCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE77DC70-6A45-451E-B61E-E69B5736DCCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC354887-37C7-4988-A1B1-4C2F4D8BFF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC354887-37C7-4988-A1B1-4C2F4D8BFF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC354887-37C7-4988-A1B1-4C2F4D8BFF12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC354887-37C7-4988-A1B1-4C2F4D8BFF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

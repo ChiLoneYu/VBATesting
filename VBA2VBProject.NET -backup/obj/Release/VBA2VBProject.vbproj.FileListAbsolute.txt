@@ -1,0 +1,8 @@
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Release\Interop.AutoCAD.dll
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Release\Interop.Scripting.dll
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Release\Interop.Shell32.dll
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Release\Interop.TLI.dll
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Release\VBA2VBProject.vbproj.ResolveComReference.cache
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Release\VBA2VBProject.frmVfcMain.resources
+C:\Users\Aaron\Source\Repos\VBATesting\VB6Conv\VBA2VBProject.NET\obj\Release\VBA2VBProject.vbproj.GenerateResource.Cache
