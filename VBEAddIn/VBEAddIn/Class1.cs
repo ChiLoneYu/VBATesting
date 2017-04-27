@@ -4,6 +4,10 @@ using Extensibility;
 using Microsoft.Vbe.Interop;
 using System.Windows.Forms;
 using Microsoft.Office.Core;
+using System.Linq;
+using ACADAPS = Autodesk.AutoCAD.ApplicationServices;
+using Autodesk.AutoCAD.EditorInput;
+using Autodesk.AutoCAD.Runtime;
 
 namespace VBEAddin
 {
@@ -142,7 +146,7 @@ namespace VBEAddin
                         break;
                 }
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -279,14 +283,14 @@ namespace VBEAddin
 
                
 
-                // Add a button to the built-in "Standard" toolbar
-                _myStandardCommandBarButton = AddCommandBarButton(standardCommandBar);
+                //// Add a button to the built-in "Standard" toolbar
+                //_myStandardCommandBarButton = AddCommandBarButton(standardCommandBar);
 
-                // Add a button to the built-in "Tools" menu
-                _myToolsCommandBarButton = AddCommandBarButton(toolsCommandBar);
+                //// Add a button to the built-in "Tools" menu
+                //_myToolsCommandBarButton = AddCommandBarButton(toolsCommandBar);
 
-                // Add a button to the built-in "Code Window" context menu
-                _myCodeWindowCommandBarButton = AddCommandBarButton(codeCommandBar);
+                //// Add a button to the built-in "Code Window" context menu
+                //_myCodeWindowCommandBarButton = AddCommandBarButton(codeCommandBar);
 
                 // ------------------------------------------------------------------------------------
                 // New toolbar
@@ -301,43 +305,43 @@ namespace VBEAddin
                 // Make visible the toolbar
                 _myToolbar.Visible = true;
 
-                // ------------------------------------------------------------------------------------
-                // New submenu under the "Tools" menu
-                // ------------------------------------------------------------------------------------
+                //// ------------------------------------------------------------------------------------
+                //// New submenu under the "Tools" menu
+                //// ------------------------------------------------------------------------------------
 
-                // Add a new commandbar popup 
-                _myCommandBarPopup1 = (CommandBarPopup)toolsCommandBar.Controls.Add(MsoControlType.msoControlPopup, System.Type.Missing, System.Type.Missing, toolsCommandBar.Controls.Count + 1, true);
+                //// Add a new commandbar popup 
+                //_myCommandBarPopup1 = (CommandBarPopup)toolsCommandBar.Controls.Add(MsoControlType.msoControlPopup, System.Type.Missing, System.Type.Missing, toolsCommandBar.Controls.Count + 1, true);
 
-                // Change some commandbar popup properties
-                _myCommandBarPopup1.CommandBar.Name = MY_COMMANDBAR_POPUP1_NAME;
-                _myCommandBarPopup1.Caption = MY_COMMANDBAR_POPUP1_CAPTION;
+                //// Change some commandbar popup properties
+                //_myCommandBarPopup1.CommandBar.Name = MY_COMMANDBAR_POPUP1_NAME;
+                //_myCommandBarPopup1.Caption = MY_COMMANDBAR_POPUP1_CAPTION;
 
-                // Add a new button on that commandbar popup
-                _myCommandBarPopup1Button = AddCommandBarButton(_myCommandBarPopup1.CommandBar);
+                //// Add a new button on that commandbar popup
+                //_myCommandBarPopup1Button = AddCommandBarButton(_myCommandBarPopup1.CommandBar);
 
-                // Make visible the commandbar popup
-                _myCommandBarPopup1.Visible = true;
+                //// Make visible the commandbar popup
+                //_myCommandBarPopup1.Visible = true;
 
-                // ------------------------------------------------------------------------------------
-                // New main menu
-                // ------------------------------------------------------------------------------------
+                //// ------------------------------------------------------------------------------------
+                //// New main menu
+                //// ------------------------------------------------------------------------------------
 
-                // Calculate the position of a new commandbar popup to the right of the "Tools" menu
-                toolsCommandBarControl = (CommandBarControl)toolsCommandBar.Parent;
-                position = toolsCommandBarControl.Index + 1;
+                //// Calculate the position of a new commandbar popup to the right of the "Tools" menu
+                //toolsCommandBarControl = (CommandBarControl)toolsCommandBar.Parent;
+                //position = toolsCommandBarControl.Index + 1;
 
-                // Add a new commandbar popup 
-                _myCommandBarPopup2 = (CommandBarPopup)menuCommandBar.Controls.Add(MsoControlType.msoControlPopup, System.Type.Missing, System.Type.Missing, position, true);
+                //// Add a new commandbar popup 
+                //_myCommandBarPopup2 = (CommandBarPopup)menuCommandBar.Controls.Add(MsoControlType.msoControlPopup, System.Type.Missing, System.Type.Missing, position, true);
 
-                // Change some commandbar popup properties
-                _myCommandBarPopup2.CommandBar.Name = MY_COMMANDBAR_POPUP2_NAME;
-                _myCommandBarPopup2.Caption = MY_COMMANDBAR_POPUP2_CAPTION;
+                //// Change some commandbar popup properties
+                //_myCommandBarPopup2.CommandBar.Name = MY_COMMANDBAR_POPUP2_NAME;
+                //_myCommandBarPopup2.Caption = MY_COMMANDBAR_POPUP2_CAPTION;
 
-                // Add a new button on that commandbar popup
-                _myCommandBarPopup2Button = AddCommandBarButton(_myCommandBarPopup2.CommandBar);
+                //// Add a new button on that commandbar popup
+                //_myCommandBarPopup2Button = AddCommandBarButton(_myCommandBarPopup2.CommandBar);
 
-                // Make visible the commandbar popup
-                _myCommandBarPopup2.Visible = true;
+                //// Make visible the commandbar popup
+                //_myCommandBarPopup2.Visible = true;
 
             }
             catch (System.Exception e)
@@ -348,8 +352,8 @@ namespace VBEAddin
 
         private void _myToolBarButton_Click(Microsoft.Office.Core.CommandBarButton Ctrl, ref bool CancelDefault)
         {
-            MessageBox.Show("Clicked " + Ctrl.Caption);
-            
+            //MessageBox.Show("Clicked " + Ctrl.Caption);
+            LoadDVBFile(@"C:\Users\Aaron\Source\Repos\VBATesting\VBASourceControl.dvb", "SelectFormToConvert");
         }
 
 
@@ -384,9 +388,7 @@ namespace VBEAddin
         private void _myCommandBarPopup2Button_Click(Microsoft.Office.Core.CommandBarButton Ctrl, ref bool CancelDefault)
         {
             MessageBox.Show("Clicked " + Ctrl.Caption);
-            MessageBox.Show(_VBE.ActiveVBProject.Name); 
-            
-
+                   
 
         }
         public void OnBeginShutdown(ref Array custom)
@@ -394,5 +396,15 @@ namespace VBEAddin
         }
 
         #endregion
+
+        public static void LoadDVBFile(String dvbPath, String macroName)
+        {
+
+            Autodesk.AutoCAD.Interop.AcadApplication myAcadApplication = (Autodesk.AutoCAD.Interop.AcadApplication)Autodesk.AutoCAD.ApplicationServices.Application.AcadApplication;  //.Application.AcadApplication;
+            myAcadApplication.LoadDVB(@dvbPath);
+            myAcadApplication.RunMacro(macroName);
+            myAcadApplication.UnloadDVB(dvbPath);
+
+        }
     }
 }

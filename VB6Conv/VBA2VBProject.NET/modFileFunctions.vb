@@ -25,7 +25,7 @@ Module modFileFunctions
 	'We store our output files in a subdirectory of the original project folder
 	'  so added a subfolder to the returned path.
 	Public Function GetFileDirectory(ByRef strFileName As String) As String
-        Dim tmpString As String
+        Dim tmpString As String = ""
         Dim intPos As Short
 		For intPos = Len(strFileName) To 1 Step -1
 			If Mid(strFileName, intPos, 1) = "\" Then

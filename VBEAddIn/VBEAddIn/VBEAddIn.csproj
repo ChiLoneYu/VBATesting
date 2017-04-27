@@ -30,15 +30,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AcCoreMgd, Version=19.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Autodesk\Autodesk_ObjectARX_2014_Win_64_and_32Bit\inc\AcCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AcDbMgd, Version=19.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Autodesk\Autodesk_ObjectARX_2014_Win_64_and_32Bit\inc\AcDbMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AcMgd, Version=19.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Autodesk\Autodesk_ObjectARX_2014_Win_64_and_32Bit\inc\AcMgd.dll</HintPath>
+    </Reference>
     <Reference Include="Autodesk.AutoCAD.Interop">
       <HintPath>..\..\..\..\..\..\..\Autodesk\Autodesk_ObjectARX_2014_Win_64_and_32Bit\inc-x64\Autodesk.AutoCAD.Interop.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AutoCAD.Interop.Common">
       <HintPath>..\..\..\..\..\..\..\Autodesk\Autodesk_ObjectARX_2014_Win_64_and_32Bit\inc-x64\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="Microsoft.Vbe.Interop.Forms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
