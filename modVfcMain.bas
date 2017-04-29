@@ -1174,10 +1174,10 @@ Public Function PostProcessDotNetProject()
     Dim doc As New DOMDocument
     Dim node As IXMLDOMNode
     
-    If Dir(frmVfcMain.ctrlFileDia.FileName) = "" Then Exit Function
+    If Dir(frmVfcMain.ctrlFileDia.fileName) = "" Then Exit Function
     
     'Open XML vbproj file.
-    doc.Load frmVfcMain.ctrlFileDia.FileName
+    doc.Load frmVfcMain.ctrlFileDia.fileName
     doc.async = False
     
     'Set option to launch AutoCAD when we 'F5' debug (we add this to every configuration)
@@ -1268,7 +1268,7 @@ Public Function PostProcessDotNetProject()
 End If
     
     'Save new .vbproj file
-    doc.Save frmVfcMain.ctrlFileDia.FileName
+    doc.Save frmVfcMain.ctrlFileDia.fileName
     Set doc = Nothing
     
     MsgBox "Finished processing .vbproj file", vbInformation, "VBA Converter"

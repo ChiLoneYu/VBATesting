@@ -17,7 +17,7 @@ Dim Limit As Long
 Dim CRC As Long
 Dim Temp1 As Long
 Dim Temp2 As Long
-Dim I As Long
+Dim i As Long
 Dim intFF As Integer
   
   intFF = FreeFile
@@ -29,7 +29,7 @@ Dim intFF As Integer
   
   Limit = Limit - 1
   CRC = -1
-  For I = 0 To Limit
+  For i = 0 To Limit
     If CRC < 0 Then
       Temp1 = CRC And &H7FFFFFFF
       Temp1 = Temp1 \ 256
@@ -37,23 +37,23 @@ Dim intFF As Integer
     Else
       Temp1 = (CRC \ 256) And &HFFFFFF
     End If
-    Temp2 = ByteArray(I)   ' get the byte
+    Temp2 = ByteArray(i)   ' get the byte
     Temp2 = CRCTable((CRC Xor Temp2) And &HFF)
     CRC = Temp1 Xor Temp2
-  Next I
+  Next i
   CRC = CRC Xor &HFFFFFFFF
   CalcCRC32 = CRC
 End Function
  
 Private Sub Class_Initialize()
-Dim I As Integer
+Dim i As Integer
 Dim J As Integer
 Dim Limit As Long
 Dim CRC As Long
 Dim Temp1 As Long
   Limit = &HEDB88320
-  For I = 0 To 255
-    CRC = I
+  For i = 0 To 255
+    CRC = i
     For J = 8 To 1 Step -1
       If CRC < 0 Then
         Temp1 = CRC And &H7FFFFFFF
@@ -68,7 +68,7 @@ Dim Temp1 As Long
         CRC = Temp1
       End If
     Next J
-    CRCTable(I) = CRC
-  Next I
+    CRCTable(i) = CRC
+  Next i
 End Sub
 
